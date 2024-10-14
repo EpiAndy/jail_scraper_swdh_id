@@ -3,7 +3,7 @@ library(RSelenium)
 library(rvest)
 
 # Start RSelenium (Previous error and Chat says to make sure you have Java installed and the appropriate Selenium server)
-rD <- rsDriver(browser = "firefox", port = 4445L, verbose = FALSE)
+rD <- rsDriver(remoteServerAddr = "localhost", browser = "firefox", port = 4445L, verbose = FALSE, chromever = NULL)
 remDr <- rD$client
 
 # Open the remote driver
@@ -16,11 +16,11 @@ scrape_names <- function(letter) {
   remDr$navigate(url)
   
   # Find the search bar and enter a letter
-  search_bar <- remDr$findElement(using = "css", "#input")  
+  search_bar <- remDr$findElement(using = "css", "inmateName_input_text")  
   search_bar$sendKeysToElement(list(letter))
   
   # Click the search button
-  search_button <- remDr$findElement(using = "css", "#button")
+  search_button <- remDr$findElement(using = "css", "inmateName_button_search")
   search_button$clickElement()
   
   # Wait for page to load
