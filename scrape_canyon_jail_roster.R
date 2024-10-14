@@ -16,11 +16,11 @@ scrape_names <- function(letter) {
   remDr$navigate(url)
   
   # Find the search bar and enter a letter
-  search_bar <- remDr$findElement(using = "css", "#input")  
+  search_bar <- remDr$findElement(using = "css", "inmateName_input_text")  
   search_bar$sendKeysToElement(list(letter))
   
   # Click the search button
-  search_button <- remDr$findElement(using = "css", "#button")
+  search_button <- remDr$findElement(using = "css", "inmateName_button_search")
   search_button$clickElement()
   
   # Wait for page to load
