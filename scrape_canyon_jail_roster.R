@@ -3,7 +3,7 @@ library(RSelenium)
 library(rvest)
 
 # Start RSelenium (Previous error and Chat says to make sure you have Java installed and the appropriate Selenium server)
-rD <- rsDriver(browser = "firefox", port = 4445L, verbose = FALSE)
+rD <- rsDriver(remoteServerAddr = "localhost", browser = "firefox", port = 4445L, verbose = FALSE, chromever = NULL)
 remDr <- rD$client
 
 # Open the remote driver
