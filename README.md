@@ -6,3 +6,8 @@ Authors: Andy Nutting, Lekshmi Rita-Venugopal, Cate Lewis.
 Special thanks to Washington Department of Health - Steven Ely, Leighton Hill, and Kiara Gavigan.
 
 Thank you Dr. Radha Sadacharan for introducing us all.
+
+Current jail rosters able to be scraped
+1) Ada County
+2) Canyon County
+... more coming soon
