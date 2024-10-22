@@ -10,4 +10,5 @@ Thank you Dr. Radha Sadacharan for introducing us all.
 Current jail rosters able to be scraped
 1) Ada County
 2) Canyon County
+3) Owyhee County
 ... more coming soon
